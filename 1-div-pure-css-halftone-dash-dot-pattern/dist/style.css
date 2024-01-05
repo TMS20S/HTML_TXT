@@ -1,0 +1,81 @@
+#btn--yp {
+  box-sizing: content-box;
+  position: fixed;
+  z-index: 9;
+  bottom: 1em;
+  right: 1em;
+  border: solid 1em transparent;
+  width: 4.625em;
+  height: 3.25em;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2017/icon-yp.svg) 50%/cover content-box;
+  font: 16px/1.25 trebuchet ms, sans-serif;
+  text-indent: 200vw;
+  text-shadow: none;
+  filter: grayscale(1) drop-shadow(0 0 1px #e8e0e0);
+  transition: 0.5s;
+  white-space: nowrap;
+}
+#btn--yp:before {
+  box-sizing: inherit;
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+  margin: 1em -0.5em;
+  padding: 0.5em;
+  width: 100%;
+  border-radius: 5px;
+  background: #e8e0e0;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  text-indent: 0vw;
+  white-space: normal;
+  animation: float 1s ease-in-out infinite alternate;
+  content: attr(data-txt);
+}
+#btn--yp:hover, #btn--yp:focus {
+  outline: none;
+  filter: grayscale(0) drop-shadow(0 0 1px crimson);
+}
+
+@keyframes float {
+  to {
+    transform: translateY(0.75em);
+  }
+}
+body, div {
+  display: grid;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: #262626;
+}
+
+div {
+  place-self: center;
+  overflow: hidden;
+  border-radius: 7px;
+  box-shadow: 2px 2px 5px #141414;
+}
+div::before, div::after {
+  --pattern:
+  	linear-gradient(90deg, #000, fuchsia, #000);
+  grid-area: 1/1;
+  padding: 45vmin;
+  background: linear-gradient(rgba(255, 0, 255, 0.47), #000), linear-gradient(fuchsia, rgba(0, 0, 0, 0.47)), var(--pattern) 0 0/2em 2em;
+  background-blend-mode: screen, multiply;
+  filter: contrast(35) contrast(0.65);
+  content: "";
+}
+div::after {
+  --pattern:
+  	radial-gradient(fuchsia, #000 71%);
+  --mask:
+  	repeating-conic-gradient(
+  			red 0% 25%, transparent 0% 50%)
+  		0 0/ 4em 4em;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}

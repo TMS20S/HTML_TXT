@@ -1,0 +1,81 @@
+body {
+    background-color: #1b1b1b;
+    height: 100vh;   
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+/* ===== FOR DEMO ===== */
+.demo {
+    height: 500px; 
+    width: 1200px;
+    margin: 0 auto;  
+    background-color: #fff;
+    -webkit-box-shadow: -1px 9px 18px -5px rgba(199,199,199,1);
+    -moz-box-shadow: -1px 9px 18px -5px rgba(199,199,199,1);
+    box-shadow: -1px 9px 18px -5px rgba(199,199,199,1);
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+}
+
+.demo__div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.demo__div:nth-of-type(1) {
+    background-color: #009CE9;
+}
+
+.demo__div:nth-of-type(2) {
+    background-color: #00BEDB;
+}
+
+.demo__div:nth-of-type(3) {
+    background-color: #00D2D9;
+}
+
+.demo__div:nth-of-type(4) {
+    background-color: #16E6B2;
+}
+
+.demo__div:nth-of-type(5) {
+    background-color: #9EF389;
+}
+
+.demo__div:nth-of-type(6) {
+    background-color: #FF9671;
+}
+
+.demo__div:nth-of-type(7) {
+    background-color: #E57B89;
+}
+
+.demo__div:nth-of-type(8) {
+    background-color: #B56D97;
+}
+
+.demo__div:nth-of-type(9) {
+    background-color: #7D6592;
+}
+
+.demo__div:nth-of-type(10) {
+    background-color: #4B597A;
+}
+
+/* ====== MAIN CODE ===== */
+.ltr {
+    font-size: 100px;
+    font-weight: 400;
+    text-transform: uppercase;
+}

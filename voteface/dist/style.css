@@ -1,0 +1,42 @@
+p {
+  color: #fff;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #121212;
+}
+
+#voteFace {
+  width: 460px;
+  margin: 0 auto;
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*
+i {
+  color: $blue;
+}
+*/
+.fa-laugh {
+  color: #37b007;
+}
+
+.fa-smile {
+  color: #a6e300;
+}
+
+.fa-meh {
+  color: #e8dc00;
+}
+
+.fa-frown {
+  color: #e07f00;
+}
+
+.fa-dizzy {
+  color: #de2904;
+}
